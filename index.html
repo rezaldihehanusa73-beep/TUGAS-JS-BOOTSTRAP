@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id" data-bs-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,16 +7,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Tema maroon tetap dipertahankan, tetapi class tetap btn btn-primary sesuai soal */
+    .btn-primary {
+      --bs-btn-bg: maroon;
+      --bs-btn-border-color: maroon;
+      --bs-btn-hover-bg: #5c0000;
+      --bs-btn-hover-border-color: #5c0000;
+      --bs-btn-active-bg: #4a0000;
+      --bs-btn-active-border-color: #4a0000;
+    }
+  </style>
   <title>Persija Apps</title>
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#beranda">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
         <img src="logo persija.png" alt="Logo Persija" width="50" height="50" class="rounded-circle" />
-        <span class="d-flex flex-column lh-sm"><strong>PERSIJA APPS</strong><small class="text-dark-50">Football
+        <span class="d-flex flex-column lh-sm"><strong>PERSIJA APPS</strong><small class="text-black-50">Football
             Association of Indonesia Jakarta</small></span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
@@ -79,113 +90,117 @@
     </div>
   </section>
 
-  <!-- Section News -->
-  <section id="news" class="container-fluid py-5" style="background-color: #fff8f3">
-    <h2 class="text-center fw-bold fs-1">Latest News</h2>
-    <p class="text-center mb-5 fs-5">
-      Informasi terbaru tentang Persija Jakarta
-    </p>
-    <div class="row g-4">
-      <!-- card 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 rounded-4 shadow-sm overflow-hidden">
-          <img src="persija uhuy.jpg" class="card-img-top foto-card object-fit-cover" alt="Persija VS Persib" />
-          <div class="card-body text-justify-custom">
-            <h5 class="mt-2 mb-2 fw-bold">
-              Persija Jakarta Berhasil Meraih Kemenangan Atas Persib Bandung
-            </h5>
-            <p class="card-text fg-2 text-justify-custom">
-              Persija Jakarta berhasil menaklukkan Persib Bandung dalam
-              pertandingan yang berlangsung di Stadion Gelora Bung Karno
-              dengan skor akhir 2-1.
-            </p>
-            <small class="fg-3 text-justify-custom">Last updated 3 mins ago</small>
+  <!-- Section News (background full-width, isi dibungkus .container) -->
+  <section id="news" class="py-5" style="background-color: #fff8f3">
+    <div class="container">
+      <h2 class="text-center fw-bold fs-1">Latest News</h2>
+      <p class="text-center mb-5 fs-5">
+        Informasi terbaru tentang Persija Jakarta
+      </p>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 rounded-4 shadow-sm overflow-hidden">
+            <img src="persija uhuy.jpg" class="card-img-top foto-card object-fit-cover" alt="Persija VS Persib" />
+            <div class="card-body text-justify-custom">
+              <h5 class="mt-2 mb-2 fw-bold">
+                Persija Jakarta Berhasil Meraih Kemenangan Atas Persib Bandung
+              </h5>
+              <p class="card-text fg-2 text-justify-custom">
+                Persija Jakarta berhasil menaklukkan Persib Bandung dalam
+                pertandingan yang berlangsung di Stadion Gelora Bung Karno
+                dengan skor akhir 2-1.
+              </p>
+              <small class="fg-3 text-justify-custom">Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 rounded-4 shadow-sm overflow-hidden">
-          <img src="koreo persija.jpg" class="card-img-top foto-card object-fit-cover" alt="Koreo Persija" />
-          <div class="card-body text-justify-custom">
-            <h5 class="mt-2 mb-2 fw-bold">
-              Total penonton Persija VS Persib tembus 58.961 penonton.
-            </h5>
-            <p class="card-text fg-2 text-justify-custom">
-              Pertandingan antara Persija Jakarta dan Persib Bandung berhasil
-              menarik perhatian banyak orang, dengan total penonton yang
-              mencapai 58.961 orang.
-            </p>
-            <small class="fg-3 text-justify-custom">Last updated 3 mins ago</small>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 rounded-4 shadow-sm overflow-hidden">
+            <img src="koreo persija.jpg" class="card-img-top foto-card object-fit-cover" alt="Koreo Persija" />
+            <div class="card-body text-justify-custom">
+              <h5 class="mt-2 mb-2 fw-bold">
+                Total penonton Persija VS Persib tembus 58.961 penonton.
+              </h5>
+              <p class="card-text fg-2 text-justify-custom">
+                Pertandingan antara Persija Jakarta dan Persib Bandung berhasil
+                menarik perhatian banyak orang, dengan total penonton yang
+                mencapai 58.961 orang.
+              </p>
+              <small class="fg-3 text-justify-custom">Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 rounded-4 shadow-sm overflow-hidden">
-          <img src="persija gacor.jpg" class="card-img-top foto-card object-fit-cover" alt="Persija VS Psim" />
-          <div class="card-body text-justify-custom">
-            <h5 class="mt-2 mb-2 fw-bold">
-              Persija Jakarta Berhasil Meraih Kemenangan Atas Psim Yogyakarta
-              dengan skor 4-0
-            </h5>
-            <p class="card-text fg-2 text-justify-custom">
-              Di bawah asuhan pelatih baru, Persija Jakarta tampil gemilang
-              dan berhasil mengalahkan Psim Yogyakarta dengan skor telak 4-0
-              dalam pertandingan yang berlangsung di Stadion Sultan Agung
-              Bantul.
-            </p>
-            <small class="fg-3 text-justify-custom">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Merchandise -->
-  <section id="merchandise" class="container-fluid py-5">
-    <h2 class="text-center fw-bold fs-1">Persija Official Store</h2>
-    <p class="text-center mb-5 fs-5">
-      Temukan merchandise resmi Persija Jakarta di sini
-    </p>
-
-    <div class="row g-3 justify-content-center">
-      <!-- Card 1 -->
-      <div class="col-10 col-sm-5 col-md-3">
-        <div class="card h-100">
-          <img src="jersey home.jpg" class="card-img-top" alt="Jersey Home Persija"
-            style="height: 280px; object-fit: cover" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">
-              Persija Jersey Player Issue Home Red
-            </h5>
-            <h6 class="card-title">Rp1.100.000</h6>
-            <a href="#pemesanan" class="btn btn-danger">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-10 col-sm-5 col-md-3">
-        <div class="card h-100">
-          <img src="jersey third.jpg" class="card-img-top" alt="Jersey Third Persija"
-            style="height: 280px; object-fit: cover" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">
-              Persija Jersey Player Issue Third Orange
-            </h5>
-            <h6 class="card-title">Rp1.100.000</h6>
-            <a href="#pemesanan" class="btn btn-danger">Buy Now</a>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 rounded-4 shadow-sm overflow-hidden">
+            <img src="persija gacor.jpg" class="card-img-top foto-card object-fit-cover" alt="Persija VS Psim" />
+            <div class="card-body text-justify-custom">
+              <h5 class="mt-2 mb-2 fw-bold">
+                Persija Jakarta Berhasil Meraih Kemenangan Atas Psim Yogyakarta
+                dengan skor 4-0
+              </h5>
+              <p class="card-text fg-2 text-justify-custom">
+                Di bawah asuhan pelatih baru, Persija Jakarta tampil gemilang
+                dan berhasil mengalahkan Psim Yogyakarta dengan skor telak 4-0
+                dalam pertandingan yang berlangsung di Stadion Sultan Agung
+                Bantul.
+              </p>
+              <small class="fg-3 text-justify-custom">Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section Pemesanan -->
-  <section id="pemesanan" class="container-fluid py-5" style="background-color: #fff8f3">
+  <!-- Section Merchandise (isi dibungkus .container) -->
+  <section id="merchandise" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold fs-1">Persija Official Store</h2>
+      <p class="text-center mb-5 fs-5">
+        Temukan merchandise resmi Persija Jakarta di sini
+      </p>
+
+      <div class="row g-3 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-10 col-sm-5 col-md-3">
+          <div class="card h-100">
+            <img src="jersey home.jpg" class="card-img-top" alt="Jersey Home Persija"
+              style="height: 280px; object-fit: cover" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Persija Jersey Player Issue Home Red
+              </h5>
+              <h6 class="card-title">Rp1.100.000</h6>
+              <a href="#pemesanan" class="btn btn-danger">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-10 col-sm-5 col-md-3">
+          <div class="card h-100">
+            <img src="jersey third.jpg" class="card-img-top" alt="Jersey Third Persija"
+              style="height: 280px; object-fit: cover" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Persija Jersey Player Issue Third Orange
+              </h5>
+              <h6 class="card-title">Rp1.100.000</h6>
+              <a href="#pemesanan" class="btn btn-danger">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Form Kontak / Pemesanan -->
+  <section id="pemesanan" class="py-5" style="background-color: #fff8f3">
     <div class="container">
       <div class="row align-items-center g-5">
         <!-- Judul dan Deskripsi -->
@@ -222,26 +237,24 @@
                 required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-secondary w-100">
-              Kirim Pesanan
-            </button>
+            <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
           </form>
         </div>
-      </div> 
+      </div>
     </div>
-  </section> 
+  </section>
 
-  <!-- Modal Konfirmasi (di luar section) -->
+  <!-- Modal Konfirmasi -->
   <div class="modal fade" id="modalKonfirmasi" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="judulModal">Konfirmasi Pesanan</h5>
+          <h5 class="modal-title fw-bold" id="judulModal">Konfirmasi Pesan</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
         </div>
 
         <div class="modal-body">
-          Apakah Anda yakin ingin mengirim pesanan ini?
+          Apakah Anda yakin ingin mengirim pesan ini?
         </div>
 
         <div class="modal-footer">
@@ -256,7 +269,7 @@
     </div>
   </div>
 
-  <!-- Footer (anak langsung body, selebar layar) -->
+  <!-- Footer -->
   <footer class="py-4 text-center" style="background-color: #f28c28; color: #2b1200">
     <div class="container">
       <p class="fw-bold mb-1">PERSIJA APPS</p>
@@ -289,8 +302,8 @@
         function () {
           Swal.fire({
             icon: "success",
-            title: "Pesanan berhasil dikirim!",
-            text: "Terima kasih, pesanan Anda akan segera kami proses.",
+            title: "Pesan berhasil dikirim!",
+            text: "Terima kasih, pesan Anda akan segera kami proses.",
             confirmButtonColor: "#dc3545",
           });
           formPesan.reset();
