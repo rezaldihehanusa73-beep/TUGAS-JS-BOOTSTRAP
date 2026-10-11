@@ -24,11 +24,11 @@
           <small class="text-black-50" style="font-size: 0.7rem;">Football Association of Indonesia Jakarta</small>
         </span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu"
+        aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarMenu">
+      <div class="collapse navbar-collapse" id="navbarmenu">
         <ul class="navbar-nav ms-auto text-center text-lg-start mt-2 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#home">HOME</a>
@@ -206,7 +206,7 @@
 
         <!-- Formulir -->
         <div class="col-12 col-md-6">
-          <form id="formPesan" class="mx-auto bg-white p-4 rounded shadow">
+          <form id="formpesan" class="mx-auto bg-white p-4 rounded shadow">
             <div class="mb-3">
               <label for="namaform" class="form-label">Nama Lengkap</label>
               <input type="text" class="form-control" id="namaform" placeholder="Masukkan nama lengkap Anda" required />
@@ -232,11 +232,11 @@
   </section>
 
   <!-- Modal Konfirmasi -->
-  <div class="modal fade" id="modalKonfirmasi" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
+  <div class="modal fade" id="modalkonfirmasi" tabindex="-1" aria-labelledby="judulmodal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="judulModal">Konfirmasi Pesan</h5>
+          <h5 class="modal-title fw-bold" id="judulmodal">Konfirmasi Pesan</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
         </div>
         <div class="modal-body">
@@ -246,7 +246,7 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
             Batal
           </button>
-          <button type="button" id="btnKonfirmasi" class="btn btn-danger">
+          <button type="button" id="btnkonfirmasi" class="btn btn-danger">
             Ya, Kirim
           </button>
         </div>
@@ -269,12 +269,12 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
 
   <script>
-    const formPesan = document.getElementById("formPesan");
-    const modalEl = document.getElementById("modalKonfirmasi");
-    const btnKonfirmasi = document.getElementById("btnKonfirmasi");
+    const formpesan = document.getElementById("formpesan");
+    const modalEl = document.getElementById("modalkonfirmasi");
+    const btnKonfirmasi = document.getElementById("btnkonfirmasi");
     const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
 
-    formPesan.addEventListener("submit", function (event) {
+    formpesan.addEventListener("submit", function (event) {
       event.preventDefault();
       modal.show();
     });
@@ -289,7 +289,7 @@
             text: "Terima kasih, pesan Anda akan segera kami proses.",
             confirmButtonColor: "#dc3545",
           });
-          formPesan.reset();
+          formpesan.reset();
         },
         { once: true }
       );
