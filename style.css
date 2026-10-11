@@ -1,10 +1,20 @@
-
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.btn-primary {
+  --bs-btn-bg: maroon;
+  --bs-btn-border-color: maroon;
+  --bs-btn-hover-bg: #5c0000;
+  --bs-btn-hover-border-color: #5c0000;
+  --bs-btn-active-bg: #4a0000;
+  --bs-btn-active-border-color: #4a0000;
+}
+
 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('persija keren.jpg');
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("persija keren.jpg");
   background-size: cover;
   background-position: 40% 60%;
   height: 80vh;
